@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&family=League+Spartan:wght@100&family=Poppins:wght@100;300&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+font-size: 50px;
+line-height: 64px;
+color: #222;
+}
+
+h2 {
+font-size: 46px;
+line-height: 54px;
+color: #222;
+}
+
+h4 {
+font-size: 20px;
+color: #222;
+}
+
+h6 {
+font-weight: 700;
+font-size: 12px;
+}
+
+P {
+font-size: 16px;
+color: #465b52;
+margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+padding: 0 40px;
+}
+
+.section-m1 {
+margin: 40px 0;
+}
+
+body {
+width: 100%;
+
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;'
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+button .normal {
+font-weight: 600;
+font-size: 14px;
+padding: 15px 30px;
+color: #000;
+background-color: #fff;
+border-radius: 4px;
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.2s;
+}
+
+#hero {
+    background-image: url("https://img.freepik.com/free-photo/fashionable-charming-girl-checkered-dress-laughing-red-wall-photo-female-model-wearing-heart-shaped-glasses-wicker-bag_197531-14332.jpg?size=626&ext=jpg"); 
+    background-repeat: none;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#hero h4 {
+padding-bottom: 15px;
+}
+#hero h1 {
+color:#088178;
+}
+#hero button {
+background-image: url("https://t3.ftcdn.net/jpg/01/97/42/26/240_F_197422696_i5ryVwvLmxfpBj70IVG7dTGsSmtbLCAu.jpg");
+background-color: transparent;
+color: #088178;
+border: 0;
+padding: 14px 80px 14px 65px;
+background-repeat: no-repeat;
+cursor: pointer;
+font-family: 700;
+font-size: 15px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+            background-color: #f6dbf6;
+            } 
+ 
+            #product1 {
+                text-align: center;
+            }   
+            
+            #product1 .pro-container {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                box-sizing: border-box;
+                border-radius: 1px solid hwb(0 0% 100% / 0.828);
+                flex-wrap: wrap;
+            }
+            
+            #product1 .pro {
+                width: 23%;
+                min-width: 250px;
+                padding: 10px 12px;
+                border: 1px solid #cce7d0;
+                border-radius: 25px;
+                cursor: pointer;
+                box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+                margin: 15px 0;
+                transition: 0.2s ease;
+                position: relative;
+            }
+            
+            #product1 .pro:hover {
+                box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+            }
+            
+            #product1 .pro img {
+                width: 100%;
+                border-radius: 20px;
+            }
+            
+            #product1 .pro .des {
+                text-align: start;
+                padding: 10px 0;
+            }
+            
+            #product1 .pro .des span {
+                color: #606063;
+                font-size: 12px;
+            }
+            
+            #product1 .pro .des h5 {
+                padding-top: 7px;
+                color: #1a1a1a;
+                font-size: 14px;
+            }
+            
+            #product1 .pro .des i {
+                font-size: 12px;
+                color: rgb(243, 181, 25);
+            }
+            
+            #product1 .pro .des h4 {
+                padding-top: 7px;
+                font-size: 15px;
+                font-weight: 700;
+                color: #088178;
+            }
+            
+            #product1 .pro .cart {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50px;
+                background-color: #e8f6ea;
+                font-weight: 500;
+                color: #088178;
+                border: 1px solid hsl(129, 36%, 85%);
+                position: absolute;
+                bottom: 20px;
+                right: 10px;
+            }
+
+            #sm-banner {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              }
+              
+              #sm-banner .banner-box {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+                background-image: url("https://img.freepik.com/free-photo/stylish-smiling-woman-showing-mobile-phone-screen-app-interface-smartphone-standing-tank-top-shorts-against-yellow-background_1258-122969.jpg?size=626&ext=jpg");
+                width: calc(50% - 15px);
+                height: 50vh;
+                background-size: cover;
+                background-position: center;
+                padding: 30px;
+                margin-bottom: 30px;
+              }
+              
+              #sm-banner .banner-box h4 {
+                font-size: 20px;
+                font-weight: 300;
+                color: #fff;
+              }
+              
+              #sm-banner .banner-box h2 {
+                font-size: 28px;
+                font-weight: 800;
+                color: #fff;
+                margin-bottom: 10px;
+              }
+              
+              #sm-banner .banner-box span {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                padding-bottom: 15px;
+              }
+              
+              #sm-banner .banner-box button.white {
+                font-weight: 600;
+                font-size: 13px;
+                padding: 11px 18px;
+                color: #fff;
+                background-color: transparent;
+                cursor: pointer;
+                border: 1px solid #fff;
+                outline: none;
+                transition: 0.2s;
+              }
+              
+              #sm-banner .banner-box:hover button.white {
+                background: #088178;
+                border: 1px solid #088178;
+              }
+              
+              .horizontal-banner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: calc(33.33% - 15px);
+                height: 40vh;
+                background-size: cover;
+                background-position: center;
+                padding: 30px;
+                margin-bottom: 30px;
+                background-color: #f2f2f2;
+                text-align: center;
+                position: relative;
+              }
+              
+              .horizontal-banner h4 {
+                font-size: 20px;
+                font-weight: 300;
+                color: #222;
+              }
+              
+              .horizontal-banner h2 {
+                font-size: 28px;
+                font-weight: 800;
+                color: #fff;
+              }
+              
+              #horizontal-banners {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 30px;
+              }
+              
+              .horizontal-banner span {
+                font-size: 14px;
+                font-weight: 500;
+                color: #222;
+                padding-bottom: 15px;
+              }
+              
+              .horizontal-banner button.white {
+                font-weight: 600;
+                font-size: 13px;
+                padding: 11px 18px;
+                color: #fff;
+                background-color: transparent;
+                cursor: pointer;
+                border: 1px solid #fff;
+                outline: none;
+                transition: 0.2s;
+              }
+              
+              .horizontal-banner:hover button.white {
+                background: #088178;
+                border: 1px solid #088178;
+              }
+              
+              /* Adjust font color for banners with red background */
+              .horizontal-banner[style*="background-image: url('yellow-banner-with-blue-lines-shapes-halftone_1017-37531.jpg')"] h4,
+              .horizontal-banner[style*="background-image: url('banner_image_3.jpg')"] h2,
+              .horizontal-banner[style*="background-image: url('abstract-colorful-soft-watercolor-texture_1035-18892.jpg')"] span {
+                color: #fff;
+              }
+              
+              #newsletter {
+                background-image: url("https://t4.ftcdn.net/jpg/00/93/10/43/240_F_93104355_aTm27Im3LdHP9eet1m40yB9IEKxwEYHf.jpg");
+                padding: 60px 0;
+                text-align: center;
+                
+              }
+              
+              #newsletter h4 {
+                font-size: 22px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 10px;
+              }
+              
+              #newsletter p {
+                font-size: 14px;
+                font-weight: 600;
+                color: #818ea0;
+                margin-bottom: 30px;
+              }
+              
+              #newsletter p span {
+                color:rgb(243, 181, 25);
+              }
+              #newsletter .form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              #newsletter input[type="text"] {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+              }
+              
+              #newsletter button {
+                padding: 10px 20px;
+                background-color: #088178;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+              }
+              
+              #newsletter button:hover {
+                background-color: #065d68;
+              }
+              
+              footer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+              }
+              
+              footer .col {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 20px;
+              }
+              
+              footer .logo {
+                margin-bottom: 30px;
+              }
+              
+              footer h4 {
+                font-size: 14px;
+                padding-bottom: 20px;
+              }
+              
+              footer p {
+                font-size: 13px;
+                margin: 0 0 0 8px;
+              }
+              
+              footer a {
+                font-size: 13px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: #222;
+              }
+              
+              footer .follow {
+                margin-top: 20px;
+              }
+              
+              footer .follow i {
+                color: #465b52;
+                cursor: pointer;
+                padding-right: 4px;
+              }
+              
+              footer .install .row img {
+                border: 1px solid #088178;
+                border-radius: 6px;
+              }
+              
+              footer .install img {
+                margin: 10px 0 15px 0;
+              }
+              
+              footer .follow i:hover,
+              footer a:hover {
+                color: #088178;
+              }
+              
+              footer .copyright {
+                width: 100%;
+                text-align: center;
+              }
+
+              #page-header {
+              background-image: url("https://img.freepik.com/free-photo/illustration-geometric-shapes-with-neon-laser-lights-great-backgrounds-wallpapers_181624-32746.jpg?size=626&ext=jpg");
+              width: 100%;
+              height: 40vh;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              flex-direction: column;
+              padding: 14px;
+              }
+
+              #page-header h2,
+              #page-header p{
+              color: #fff;;
+              }
+
+             #pagination{
+                text-align: center;
+             }
+
+             #pagination a {
+             text-decoration: none;
+             background-color: #088178;
+             padding: 15px 20px;
+             border-radius: 4px;
+             color: #fff;
+             font-weight: 600;
+             }
+
+             #pagination a i {
+                font-size: 16px;
+                font-weight: 600;
+             }
+
+
+             #prodetails .product-details {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+            }
+            
+
+            
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #000000;
+}
+
+.about-content h2 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #c3ca08;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #f5f5f5;
+}
+
+
+
+.about-content {
+  flex: 1;
+  max-width: 60%;
+}
+           
+.about-image img {
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-section {
+  background-image: url('https://img.freepik.com/free-vector/abstract-orange-background-with-lines-halftone-effect_1017-32107.jpg?size=626&ext=jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  color: #fff;
+}
+
+
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #f5f5f5;
+}
+
+.video-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+.video-content h2 {
+  font-size: 70px;
+  color: #065d68;
+  margin-bottom: 20px;
+}
+
+.video-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.video-container {
+  flex: 1;
+  max-width: 40%;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+        
+  /* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.about-section {
+  background-image: url('about_background.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  color: #fff; /* Set text color for better contrast */
+}
+
+.about-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+.about-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  /* Set background color to blue */
+  color: #fff; /* Set text color for better contrast */
+}
+
+.video-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+.video-content h2 {
+  font-size: 28px;
+  color: #fff; /* Set text color to white */
+  margin-bottom: 20px;
+}
+
+.video-content p {
+  font-size: 16px;
+  color: #be3d3d; /* Set text color to white */
+  line-height: 1.5;
+}
+
+.video-container {
+  flex: 1;
+  max-width: 40%;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+}
+
+#page-header{
+  background-image: url("https://img.freepik.com/premium-photo/male-power-neon-light-portrait-brutal-athletic-man_279525-14128.jpg?size=626&ext=jpg");
+}
+
+
+
